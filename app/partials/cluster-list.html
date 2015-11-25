@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="nClusters">Number of clusters</option>
+        <option value="rows">Number of rows</option>
+        <option value="input">Input file</option>
+      </select>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="clusters">
+        <li ng-repeat="cluster in clusters | filter:query | orderBy:orderProp">
+          <a href="#/clusters/{{cluster.id}}">{{cluster.id}}</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

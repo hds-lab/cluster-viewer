@@ -1,0 +1,28 @@
+[
+    {
+        "nClusters": 30, 
+        "id": "cluto-default-30", 
+        "input": "oso.mat",
+        "rows": 1000,
+        "columns": 4437,
+        "NonZeros": 4437000
+    },
+    {
+        "nClusters": 10, 
+        "id": "cluto-default-10", 
+        "input": "oso.mat",
+        "rows": 1000,
+        "columns": 4437,
+        "NonZeros": 4437000
+    },
+    {
+        "nClusters": 10, 
+        "id": "cluto_default_random1_10", 
+        "input": "random1.mat",
+        "rows": 1000,
+        "columns": 4601,
+        "NonZeros": 27188
+    }
+]
+
+

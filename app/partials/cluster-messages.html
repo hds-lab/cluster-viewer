@@ -1,0 +1,14 @@
+<div class="ng-container">
+<h4>Words: </h4>
+      <span ng-repeat="w in ncluster.words">
+        {{w}}    
+      </span>
+
+<h4>Messages</h4>
+<ul>
+  <li ng-repeat="m in ncluster.messages track by $index">
+    {{m}}
+  </li>
+</ul>
+</div>
+

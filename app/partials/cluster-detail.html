@@ -1,0 +1,24 @@
+<h1>{{cluster.id}}</h1>
+
+<p>Number of clusters:{{cluster.nClusters}}</p>
+<p>Input file: {{cluster.input}}</p>
+<p>Number of entries: {{cluster.rows}}</p>
+<p>Number of dimensions: {{cluster.columns}}</p>
+
+<div class="ng-scope" style="display:inline-flex">
+  <div class="col-md-10" ng-repeat="c in cluster.clusters" style="float:left">
+    <div>
+      <h4>n°: {{c.cluster}}</h4>
+      <h4>Words: </h4>
+      <span ng-repeat="word in c.words">
+        {{word}}    
+      </span>
+      <h4><a href="#/clusters/{{cluster.id}}/{{c.cluster}}">Messages</a></h4>
+      <ul>
+        <li ng-repeat="message in c.messages track by $index">
+          {{message}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
